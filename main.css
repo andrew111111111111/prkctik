@@ -37,7 +37,7 @@ body {
     background-color: #030303;
   }
   20% {
-    transform: translate(-100%, 150%);
+    transform: translate(-150%, 150%);
     background-color: wheat;
   }
   40% {
@@ -45,7 +45,7 @@ body {
     background-color: #030303;
   }
   60% {
-    transform: translate(100%, 150%);
+    transform: translate(150%, 150%);
     background-color: wheat;
   }
   100% {
