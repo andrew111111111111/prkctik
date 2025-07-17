@@ -20,16 +20,15 @@ body {
 }
 
 .box {
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  background-color: #030303;
-  border-radius: 20px;
-
+  width: 100px;
+  height: 100px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #030303; */
+  /* border-radius: 20px; */
   animation-iteration-count: infinite;
   animation-duration: 3s;
   animation-timing-function: ease;
-  animation-name: loading;
+  animation-name: homework;
 }
 @keyframes loading {
   0% {
@@ -40,16 +39,131 @@ body {
     transform: translate(-150%, 150%);
     background-color: wheat;
   }
-  40% {
+  60% {
     transform: translate(150%, -150%);
     background-color: #030303;
   }
-  60% {
+  80% {
     transform: translate(150%, 150%);
     background-color: wheat;
   }
   100% {
     transform: translate(-150%, -150%);
     background-color: #030303;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-60%);
+    background-color: #030303;
+  }
+  10% {
+    transform: translateY(0);
+    background-color: wheat;
+  }
+  30% {
+    transform: translateY(-30%);
+    background-color: #030303;
+  }
+  40% {
+    transform: translateY(0);
+    background-color: wheat;
+  }
+  60% {
+    transform: translateY(-15%);
+    background-color: #030303;
+  }
+  70% {
+    transform: translateY(0);
+    background-color: wheat;
+  }
+  95% {
+    transform: translateY(-10%);
+    background-color: #030303;
+  }
+  100% {
+    transform: translateY(0);
+    background-color: #030303;
+  }
+}
+@keyframes go-left {
+  0% {
+    transform: translateX(0);
+    background-color: #030303;
+  }
+  25% {
+    transform: translateX(-150%);
+    background-color: wheat;
+  }
+  26% {
+    transform: translateX(150%);
+    background-color: wheat;
+  }
+  45% {
+    transform: translateX(-150%);
+    background-color: #030303;
+  }
+  46% {
+    transform: translateX(150%);
+    background-color: #030303;
+  }
+  60% {
+    transform: translateX(-150%);
+    background-color: wheat;
+  }
+  61% {
+    transform: translateX(150%);
+    background-color: wheat;
+  }
+  75% {
+    transform: translateX(-150%);
+    background-color: #030303;
+  }
+  76% {
+    transform: translateX(150%);
+    background-color: #030303;
+  }
+  85% {
+    transform: translateX(-150%);
+    background-color: #030303;
+  }
+  86% {
+    transform: translateX(150%);
+    background-color: #030303;
+  }
+  88% {
+    transform: translateX(-100%) rotate(-15deg);
+    background-color: wheat;
+  }
+  93% {
+    transform: translateX(-150%) rotate(-15deg);
+    background-color: wheat;
+  }
+  100% {
+    transform: translateX(0) rotate(15deg);
+    background-color: wheat;
+  }
+}
+@keyframes homework {
+  0% {
+    background-color: red;
+    transform: translate(-150%, -150%);
+  }
+  25% {
+    transform: translate(-150%, 150%);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(150%, 150%);
+    background-color: green;
+  }
+  75% {
+    transform: translate(150%, -150%);
+    background-color: yellow;
+  }
+
+  100% {
+    transform: translate(-150%, -150%);
+    background-color: red;
   }
 }
